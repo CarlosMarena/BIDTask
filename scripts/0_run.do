@@ -53,8 +53,8 @@ net set ado "stata_packages"
 // Download user written packages 
 if $downloads == 1{
 	// scc install something , replace 
-	 ssc install blindschemes, replace
-	 ssc install estout, replace 
+	// ssc install blindschemes, replace // uncomment this line
+	//  ssc install estout, replace 
 	// ssc install tabmiss, replace 
 	// ssc install coefplot, replace
 }
@@ -91,4 +91,6 @@ scalar drop _all
 
 ////////////////////////////////////////////////////////////////////////////////
 * 5. Run the do.files 
-// do $script_path\1.script_1.do
+do "$script_path\1_data_cleaning.do"
+do "$script_path\2.0_descriptive_statistics.do"
+do "$script_path\2.1_regressions.do"

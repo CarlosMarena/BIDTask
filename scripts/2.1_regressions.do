@@ -32,4 +32,5 @@ collect export "$output_path\table1.docx", replace
 global controls registered_total i.town_id 
 quietly ivregress 2sls turnout_total (treatment = take_up) $controls, vce(robust)
 estat firststage, forcenonrobust all  
-
+* 22. Relative to 18 
+ivregress 2sls turnout_total (treatment = take_up) $controls, vce(robust)

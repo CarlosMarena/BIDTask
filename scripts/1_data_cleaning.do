@@ -67,4 +67,4 @@ lab var take_up "Take-up (binary)"
 lab var district "District (encoded name)"
 
 compress 
-save "$analysis_data_path\data_to_analyze", replace 
+save "$analysis_data_path\data_to_analyze_$date", replace 
