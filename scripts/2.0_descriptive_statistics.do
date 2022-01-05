@@ -41,6 +41,6 @@ graph bar (mean) turnout_fem_rate turnout_male_rate turnout_tot_rate, over(treat
 	title("Average Female, Male and Total average turnout rates") ///
 	subtitle("by treatment status") ///
 	ytit("Percent (%)")
-export graph ""
+graph export "$output_path\graph_ex13.pdf", replace 
    
 

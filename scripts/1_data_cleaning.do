@@ -44,7 +44,7 @@ isid unique_id // sanity check
 codebook _all , mv 
 mvdecode registered_total registered_male registered_female, mv(-999=. \ -998=.)
 
-* 6. Create a dummy for each town_id 
+* 6. Create a dummy for each town_id (can also se done with tab and gen option) 
 tab town_id, gen(dummy_town)
 
 * 7. Label variables 

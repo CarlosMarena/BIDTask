@@ -54,7 +54,8 @@ net set ado "stata_packages"
 if $downloads == 1{
 	// scc install something , replace 
 	 ssc install blindschemes, replace
-	 ssc install tabmiss, replace 
+	 ssc install estout, replace 
+	// ssc install tabmiss, replace 
 	// ssc install coefplot, replace
 }
 
