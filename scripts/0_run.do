@@ -13,6 +13,7 @@ global absolute_path "C:\Users\HP\Documents\GitHub\BIDTask"
 // Relative paths 
 global data_path 		"$absolute_path\data"
 global raw_data_path 	"$data_path\raw_data"
+global analysis_data_path "$data_path\analysis_data"
 global temp_path 		"$absolute_path\temp"
 
 global script_path 		"$absolute_path\scripts"
@@ -53,6 +54,7 @@ net set ado "stata_packages"
 if $downloads == 1{
 	// scc install something , replace 
 	 ssc install blindschemes, replace
+	 ssc install tabmiss, replace 
 	// ssc install coefplot, replace
 }
 
